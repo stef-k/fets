@@ -2,15 +2,15 @@
 
 ## An early alert system for fire preventions
 
-[!Main page](screenshots/fets-main.jpeg "FETS main page")
+![Main page](screenshots/fets-main.jpeg "FETS main page")
 
 FETS is an early fire detection system utilizing public awareness in order to collect early indications of potential wildfires. The web application, receives data such as GPS coordinates and timestamps from the accompaning Android application and renders the related information locally in Google maps.
 
 The application uses a WebSocket connection in order to render the incoming data in user's browser without reloading the page. Additionaly it plays an alerting sound to catch user's attention.
 
-[!Event settings menu](screenshots/fets-event-settings.jpeg "FETS event settings menu")
+![Event settings menu](screenshots/fets-event-settings.jpeg "FETS event settings menu")
 
-[!Login page](screenshots/fets-login.jpeg "FETS login page")
+![Login page](screenshots/fets-login.jpeg "FETS login page")
 
 ## Stack
 
