@@ -1,0 +1,17 @@
+footer {
+  font-size: 12px;
+  font-family: monospace;
+  .copyright {
+    background-color: $gray;
+    color: $white;
+  }
+  a {
+    color: $white;
+    border-bottom: 2px solid transparent;
+    &:hover {
+      border-bottom: 2px solid $white;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}

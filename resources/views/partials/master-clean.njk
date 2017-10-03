@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FETS | Fire Emergency Tactical System</title>
+  <link rel="shortcut icon" href="/assets/favicon201709040129.png" />
+  <link rel="stylesheet" type="text/css" href="/dist/css/app.min.css">
+</head>
+
+<body class="site login-header">
+{{ csrfField }}
+  <main class="site-content">
+    {% block content %}{% endblock %}
+  </main>
+
+  <script>
+    window.app = {}
+    window.app.env = '{{ env() }}';
+    window.app.host = '{{ host() }}';
+
+  </script>
+  <script src="/dist/js/app.min.js"></script>
+</body>
+
+</html>

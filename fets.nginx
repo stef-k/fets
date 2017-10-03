@@ -1,0 +1,16 @@
+server {
+    listen 80;
+
+    # Put the correct domain name here
+    server_name example.com;
+
+    # Check the correct port (Adonis uses 3333 as default)
+    location / {
+        proxy_pass http://127.0.0.1:3333;
+        proxy_http_version: 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}

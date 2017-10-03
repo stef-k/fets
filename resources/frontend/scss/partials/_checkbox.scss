@@ -1,0 +1,7 @@
+.is-checkbox[type=checkbox]:checked+label::before {
+  border: $gray;
+  background: $gray;
+}
+.is-checkbox[type=checkbox]+label, .is-radio[type=radio]+label {
+  user-select: none;
+}

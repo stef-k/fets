@@ -1,0 +1,38 @@
+{% extends 'partials/master-clean' %}
+{% block content %}
+<section class="hero is-alt is-fullheight">
+
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half-desktop is-offset-one-quarter">
+          <div class=" has-text-centered"><img src="/assets/logo.png"  class="logo" alt="FETS logo"></div>
+          <div class="card is-login mt">
+            <div class="card-content">
+              <p class="title has-text-centered">ΕΙΣΟΔΟΣ</p>
+              <hr>
+              <p class="control mt">
+                <label class="label is-large">Email</label>
+                <input class="input is-large email-input" type="text" placeholder="Το email σας">
+              </p>
+              <p class="control mt">
+                <label class="label is-large">Κωδικός</label>
+                <input class="input is-large password-input" type="password" placeholder="Ο προσωπικός σας κωδικός">
+              </p>
+              <div class="login-feedback"></div>
+
+              <button class="button do-login is-large red-brown">Είσοδος</button>
+            </div>
+
+          </div>
+          <p class="has-text-centered description mt">Σύστημα έγκαιρης προειδοποίησης πυρκαγιάς -
+          <a href="/about">Διαβάστε περισσότερα</a>
+          </p>
+          <p class="credits has-text-centered mt">Developed by <a href="https://imaginebinary.io" target="_blank">Imagine Binary</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

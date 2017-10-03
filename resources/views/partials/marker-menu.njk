@@ -1,0 +1,33 @@
+<div class="modal" id="markerMenu">
+
+  <div class="modal-background"></div>
+
+  <div class="modal-card">
+    <header class="modal-card-head marker-menu-header">
+      <p class="modal-card-title">Μενού Ενδείκτη</p>
+      <button class="delete closeMarkerMenu" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <div class="content">
+        <h3>Οδηγίες</h3>
+        <p>Παρακάτω θα βρέιτε λεπτομέρειες σχετικά με την αναφορά του συμβάντος αλλά και τις επιλογές για τον ενδείκτη που καταδεικνύει
+          το μέρος.</p>
+        <hr>
+        <div id="markerInfo"></div>
+        <hr>
+        <div id="markerEdit"></div>
+      </div>
+    </section>
+
+    <footer class="modal-card-foot">
+      <button class="button deleteMarkerMenu" disabled id="deleteMarkerBtn">Διαγραφή</button>
+      <div class="field safety">
+        <input id="deletionSafety" type="checkbox" name="deletionSafety" class="switch is-medium" >
+        <label for="deletionSafety" id="safetyLabel">ασφαλισμένο</label>
+      </div>
+
+      <button class="button closeMarkerMenu">Κλείσιμο</button>
+    </footer>
+
+  </div>
+</div>

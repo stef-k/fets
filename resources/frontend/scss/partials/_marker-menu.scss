@@ -1,0 +1,46 @@
+// $modal-card-spacing: 20px;
+.marker-menu-header {
+  background-color: $gray;
+  color: $white;
+  p {
+    color: $white;
+  }
+  .delete {
+    &:hover {
+      background-color: $red-brown;
+    }
+  }
+}
+
+.modal-card-foot {
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.deleteMarkerMenu {
+  background-color: $red-brown;
+  color: $white;
+  &:hover {
+    color: $white;
+    background-color: $red-brown;
+  }
+  &:disabled {
+    border: 1px solid $red-brown;
+    color: $red-brown;
+  }
+}
+
+.closeMarkerMenu {
+  &:hover {
+    color: $white;
+    background-color: $gray;
+  }
+}
+
+#markerInfo {
+  p {
+    &:hover {
+      background-color: rgba(44, 66, 81, .1);
+    }
+  }
+}

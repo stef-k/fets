@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-content {
+  flex: 1;
+}
+
+.gray {
+  color: $gray;
+}
+.red-brown {
+  color: $red-brown;
+}
+a {
+  border-bottom: 2px solid transparent;
+  color: $gray;
+  &:hover {
+    border-bottom: 2px solid $red-brown;
+    color: $gray;
+  }
+}
