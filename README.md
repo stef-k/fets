@@ -29,7 +29,7 @@ The application uses a WebSocket connection in order to render the incoming data
 after finishing the installation of dependencies run
 
 ```bash
-adonis serve --dev
+npm run serve:dev
 ```
 
 ### Migrations
