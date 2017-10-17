@@ -262,7 +262,7 @@ class GMap {
     }
   }
   getMarkerInfo (alert) {
-    return `<h4>Πληφορορίες</h4><p><b>Ώρα Δήλωσης Συμβάντος:</b> <span class='data'>` + new Date(alert.alert.created_at).toLocaleString('el-GR') + `</span></p>
+    return `<h4>Πληροφορίες</h4><p><b>Ώρα Δήλωσης Συμβάντος:</b> <span class='data'>` + new Date(alert.alert.created_at).toLocaleString('el-GR') + `</span></p>
     <p><b>Τηλέφωνο Πολίτη:</b> <span class='data'>` + alert.alert.phonenumber + `</span></p>
     <p><b>Γεωγραφικό Μήκος (Latitude):</b> <span class='data'>` + alert.alert.lat + `</span></p>
     <p><b>Γεωγραφικό Πλάτος (Longitude):</b> <span class='data'>` + alert.alert.lon + `</span></p>`
