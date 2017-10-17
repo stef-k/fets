@@ -12,10 +12,11 @@ class UserController {
     const login = yield request.auth.attempt(email, password)
 
     if (login) {
+      console.log('user has logged in')
       response.send('success')
       return
     }
-
+    console.log('failed to log in')
     response.unauthorized('invalid credentials')
   }
 
