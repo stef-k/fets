@@ -41,6 +41,7 @@ class Login {
         },
         error: (err) => {
           let feedback = ''
+          console.log(err)
           if (err.responseJSON.error.name === 'PasswordMisMatchException') {
             feedback = 'Λάθος κωδικός, παρακαλούμε ελέγξτε τον κωδικό που εισάγετε...'
           } else if (err.responseJSON.error.name === 'UserNotFoundException') {
