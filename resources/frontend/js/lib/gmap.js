@@ -112,8 +112,8 @@ class GMap {
   getAlertFromMarker (marker) {
     let result = false
     this.markers.forEach((entry) => {
-      if ((Math.round(marker.latLng.lat() * 1e6) / 1e6) === entry.alert.lat &&
-        (Math.round(marker.latLng.lng() * 1e6) / 1e6) === entry.alert.lon) {
+      if ((Math.round(marker.latLng.lat() * 1e7) / 1e7) === entry.alert.lat &&
+        (Math.round(marker.latLng.lng() * 1e7) / 1e7) === entry.alert.lon) {
         result = entry
       }
     })
@@ -262,7 +262,7 @@ class GMap {
     }
   }
   getMarkerInfo (alert) {
-    console.log(alert )
+    console.log(alert)
     return `<h4>Πληροφορίες</h4><p><b>Ώρα Δήλωσης Συμβάντος:</b> <span class='data'>` + new Date(alert.alert.created_at).toLocaleString('el-GR') + `</span></p>
     <p><b>Τηλέφωνο Πολίτη:</b> <span class='data'>` + alert.alert.phonenumber + `</span></p>
     <p><b>Γεωγραφικό Μήκος (Latitude):</b> <span class='data'>` + alert.alert.lat + `</span></p>
