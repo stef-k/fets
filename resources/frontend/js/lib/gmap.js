@@ -262,7 +262,6 @@ class GMap {
     }
   }
   getMarkerInfo (alert) {
-    console.log(alert)
     return `<h4>Πληροφορίες</h4><p><b>Ώρα Δήλωσης Συμβάντος:</b> <span class='data'>` + new Date(alert.alert.created_at).toLocaleString('el-GR') + `</span></p>
     <p><b>Τηλέφωνο Πολίτη:</b> <span class='data'>` + alert.alert.phonenumber + `</span></p>
     <p><b>Γεωγραφικό Μήκος (Latitude):</b> <span class='data'>` + alert.alert.lat + `</span></p>
