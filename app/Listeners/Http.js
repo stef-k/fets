@@ -48,6 +48,10 @@ Http.onStart = function () {
     const Env = use('Env')
     return Env.get('HOST') + ':' + Env.get('PORT')
   })
+  View.global('domain', () => {
+    const Env = use('Env')
+    return Env.get('DOMAIN')
+  })
   View.global('gmaps', () => {
     const Env = use('Env')
     return Env.get('GOOGLE_MAPS_KEY')
