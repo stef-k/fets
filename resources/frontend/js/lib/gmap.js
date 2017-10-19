@@ -268,6 +268,7 @@ class GMap {
     <p><b>Γεωγραφικό Πλάτος (Longitude):</b> <span class='data'>` + alert.alert.lon + `</span></p>`
   }
   getEditInfo (alert) {
+    console.log(alert)
     let verified = alert.alert.verified === 1 ? 'checked="checked"' : ''
     let comments = alert.alert.comments === null ? '' : alert.alert.comments
     return `<h4>Ενέργειες</h4>
