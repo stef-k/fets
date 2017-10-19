@@ -262,13 +262,13 @@ class GMap {
     }
   }
   getMarkerInfo (alert) {
+    console.log(alert)
     return `<h4>Πληροφορίες</h4><p><b>Ώρα Δήλωσης Συμβάντος:</b> <span class='data'>` + new Date(alert.alert.created_at).toLocaleString('el-GR') + `</span></p>
     <p><b>Τηλέφωνο Πολίτη:</b> <span class='data'>` + alert.alert.phonenumber + `</span></p>
     <p><b>Γεωγραφικό Μήκος (Latitude):</b> <span class='data'>` + alert.alert.lat + `</span></p>
     <p><b>Γεωγραφικό Πλάτος (Longitude):</b> <span class='data'>` + alert.alert.lon + `</span></p>`
   }
   getEditInfo (alert) {
-    console.log(alert)
     let verified = alert.alert.verified === 1 ? 'checked="checked"' : ''
     let comments = alert.alert.comments === null ? '' : alert.alert.comments
     return `<h4>Ενέργειες</h4>
